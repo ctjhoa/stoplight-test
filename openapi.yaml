@@ -223,7 +223,7 @@ paths:
   /organization:
     get:
       summary: List user organizations
-      operationId: listOrganization
+      operationId: listOrganizations
       tags:
         - Organization Main Calls
       responses:
@@ -370,7 +370,10 @@ paths:
         id: pqzbpkidgfv5p
     post:
       summary: Create an organization api token
-      description: Create an organization api token. You can use the generated token to interact in a programmatic way with our API.
+      description: |-
+        Create an organization api token. You can use the generated token to interact in a programmatic way with our API.
+
+        dfjgsldfjglsdf
       operationId: createOrganizationApiToken
       parameters:
         - $ref: '#/components/parameters/organizationId'
