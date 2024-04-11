@@ -10633,6 +10633,14 @@ paths:
           $ref: '#/components/responses/404'
       x-stoplight:
         id: i7n3vgc7ewli9
+  /barbapapa:
+    get:
+      summary: getBarbapapa
+      tags: []
+      responses: {}
+      operationId: get-barbapapa
+      x-stoplight:
+        id: cna06oaakh039
 components:
   parameters:
     applicationId:
