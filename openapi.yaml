@@ -17733,12 +17733,15 @@ components:
         id: acadgy5m6kesp
     VariableRequest:
       type: object
+      x-stoplight:
+        id: 96f5ubzrkawct
       required:
         - key
         - value
         - is_secret
         - variable_scope
         - variable_parent_id
+        - toto
       properties:
         key:
           type: string
@@ -17748,8 +17751,8 @@ components:
           description: the value of the environment variable
         mount_path:
           type: string
-          nullable: true
           description: the path where the file will be mounted (only if type =file)
+          nullable: true
         is_secret:
           type: boolean
           description: 'if true, the variable will be considered as a secret and will not be accessible after its creation. Only your applications will be able to access its value at build and run time.'
@@ -17759,8 +17762,10 @@ components:
           type: string
           format: uuid
           description: 'based on the selected scope, it contains the ID of the service, environment or project where the variable is attached'
-      x-stoplight:
-        id: 96f5ubzrkawct
+        toto:
+          type: string
+          x-stoplight:
+            id: bkpifwo6pipea
     VariableEditRequest:
       type: object
       required:
