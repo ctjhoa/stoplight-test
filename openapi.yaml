@@ -241,6 +241,7 @@ paths:
           $ref: '#/components/responses/404'
       x-stoplight:
         id: 6vxwz1c2o0hcl
+      parameters: []
     post:
       summary: Create an organization
       operationId: createOrganization
@@ -10633,6 +10634,15 @@ paths:
           $ref: '#/components/responses/404'
       x-stoplight:
         id: i7n3vgc7ewli9
+  /totos:
+    get:
+      summary: '/{id}'
+      tags:
+        - toto
+      responses: {}
+      operationId: get-totos
+      x-stoplight:
+        id: 7dil5no5fjx0u
 components:
   parameters:
     applicationId:
