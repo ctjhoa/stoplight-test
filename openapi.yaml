@@ -16503,9 +16503,13 @@ components:
         id: zpq13ba35ekqy
     OrganizationRequest:
       type: object
+      x-stoplight:
+        id: ezozw3gcz8i4g
       required:
         - name
         - plan
+        - repository
+        - logo_url
       properties:
         name:
           type: string
@@ -16532,8 +16536,6 @@ components:
           nullable: true
           items:
             type: string
-      x-stoplight:
-        id: ezozw3gcz8i4g
     OrganizationResponseList:
       type: object
       properties:
